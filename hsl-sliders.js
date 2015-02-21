@@ -72,7 +72,7 @@ module.exports = React.createClass({displayName: "exports",
 
   renderRange: function(range) {
     var label = range.label;
-    label += this.props.hideValue ? '' : ' ' + range.value + range.symbol;
+    label += this.props.hideValues ? '' : ' ' + range.value + range.symbol;
     return (
       React.createElement("div", {className: this.props.classNames.rangeGroup}, 
         React.createElement("label", {className: this.props.classNames.rangeLabel}, 
