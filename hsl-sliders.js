@@ -10,6 +10,7 @@ module.exports = React.createClass({displayName: "exports",
       onChange: false,
       inline: true,
       tabIndex: 0,
+      hideValues: false,
       classNames: {
         container: 'flex flex-center',
         rangeGroup: 'px1',
@@ -70,10 +71,12 @@ module.exports = React.createClass({displayName: "exports",
   },
 
   renderRange: function(range) {
+    var label = range.label;
+    label += this.props.hideValue ? '' : ' ' + range.value + range.symbol;
     return (
       React.createElement("div", {className: this.props.classNames.rangeGroup}, 
         React.createElement("label", {className: this.props.classNames.rangeLabel}, 
-          range.label, " ", range.value, range.symbol
+          label
         ), 
         React.createElement("input", {type: "range", 
           className: this.props.classNames.range, 

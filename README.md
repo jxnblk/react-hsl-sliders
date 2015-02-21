@@ -12,6 +12,7 @@ npm install react-hsl-sliders
 - onChange (function)
 - inline (boolean)
 - tabIndex (number)
+- hideValues (boolean)
 - classNames (object)
   - container (string)
   - rangeGroup (string)
