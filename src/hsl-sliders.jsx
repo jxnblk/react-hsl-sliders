@@ -60,7 +60,7 @@ module.exports = React.createClass({
 
   componentWillReceiveProps: function(nextProps) {
     try {
-      var hsl = Color(nextProps.color).hsl();
+      var hsl = Color(nextProps.value).hsl();
       this.setState({
         hue: hsl.h,
         saturation: hsl.s,
