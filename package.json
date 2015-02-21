@@ -17,5 +17,12 @@
   },
   "devDependencies": {
     "react-tools": "^0.12.2"
-  }
+  },
+  "keywords": [
+    "React",
+    "react-component",
+    "UI",
+    "Color",
+    "Basscss"
+  ]
 }
