@@ -1,0 +1,21 @@
+{
+  "name": "react-hsl-sliders",
+  "version": "1.0.0",
+  "description": "React HSL color sliders component",
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "main": "hsl-sliders.js",
+  "scripts": {
+    "prepublish": "jsx -x jsx src .",
+    "start": "jsx -x jsx -w src ."
+  },
+  "peerDependencies": {
+    "react": "^0.12.2"
+  },
+  "dependencies": {
+    "color": "^0.7.3"
+  },
+  "devDependencies": {
+    "react-tools": "^0.12.2"
+  }
+}
