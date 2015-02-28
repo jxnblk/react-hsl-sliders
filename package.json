@@ -1,6 +1,6 @@
 {
   "name": "react-hsl-sliders",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React HSL color sliders component",
   "author": "Brent Jackson",
   "license": "MIT",
@@ -18,7 +18,7 @@
   "devDependencies": {
     "react-tools": "^0.12.2"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/jxnblk/react-hsl-sliders.git"
   },
