@@ -8,6 +8,7 @@ module.exports = React.createClass({
     return {
       value: '',
       onChange: false,
+      id: '',
       inline: true,
       tabIndex: 0,
       hideValues: false,
@@ -73,12 +74,18 @@ module.exports = React.createClass({
   renderRange: function(range) {
     var label = range.label;
     label += this.props.hideValues ? '' : ' ' + range.value + range.symbol;
+    var id = this.props.id + '-' + range.label;
     return (
-      <div className={this.props.classNames.rangeGroup}>
-        <label className={this.props.classNames.rangeLabel}>
+      <div
+        key={id}
+        className={this.props.classNames.rangeGroup}>
+        <label
+          htmlFor={id}
+          className={this.props.classNames.rangeLabel}>
           {label}
         </label>
         <input type="range"
+          id={id}
           className={this.props.classNames.range}
           value={range.value}
           onChange={range.onChange}
