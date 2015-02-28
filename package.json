@@ -18,6 +18,10 @@
   "devDependencies": {
     "react-tools": "^0.12.2"
   },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/jxnblk/react-hsl-sliders.git"
+  },
   "keywords": [
     "React",
     "react-component",
