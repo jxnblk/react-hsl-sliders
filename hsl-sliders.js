@@ -12,12 +12,6 @@ module.exports = React.createClass({displayName: "exports",
       inline: true,
       tabIndex: 0,
       hideValues: false,
-      classNames: {
-        container: 'flex flex-center',
-        rangeGroup: 'px1',
-        rangeLabel: 'h5 bold lh1 block',
-        range: 'full-width m0 range-light',
-      }
     }
   },
 
@@ -78,15 +72,15 @@ module.exports = React.createClass({displayName: "exports",
     return (
       React.createElement("div", {
         key: id, 
-        className: this.props.classNames.rangeGroup}, 
+        className: "HslSliders-formGroup px1"}, 
         React.createElement("label", {
           htmlFor: id, 
-          className: this.props.classNames.rangeLabel}, 
+          className: "HslSliders-label h5 bold block"}, 
           label
         ), 
         React.createElement("input", {type: "range", 
           id: id, 
-          className: this.props.classNames.range, 
+          className: "HslSliders-input col-12 m0 range-light", 
           value: range.value, 
           onChange: range.onChange, 
           min: range.min, 
@@ -125,7 +119,7 @@ module.exports = React.createClass({displayName: "exports",
       },
     ];
     return (
-      React.createElement("div", {className: this.props.classNames.container}, 
+      React.createElement("div", {className: "HslSliders flex flex-center mxn1"}, 
         ranges.map(this.renderRange)
       )
     )
